@@ -6,13 +6,13 @@ span = document.querySelector("#wht")
 wht1 = document.querySelector("#wht1")
 nav_color = document.getElementById("navi")
 nav_color1 = document.getElementById("navi1")
-link = document.getElementById("link"), 
-document.getElementById("link1"),
-document.getElementById("link2")
+
 // wht = document.getComputedStyle(span, "::after")
 // wht1 = document.getComputedStyle(wht1, "::after")
 
 darkmode = document.querySelector(".darkmode")
+
+link = link, link1, link2
 
 var darkMode = false
 function btn() {
@@ -28,13 +28,12 @@ function btn() {
         nav.style.backgroundColor = '#343F4F';
         nav_color.style.color = "white";
         nav_color1.style.color = "white";
-        link.style.color = "white";                                               
     }
     else {
         body.style.backgroundColor = 'white'
         body.style.color = 'black'
-        span.style.setProperty('--spanAfterBackColor', '#343f4f00');
-        wht1.style.setProperty('--spanAfterBackColor', '#343f4f00');
+        span.style.setProperty('--spanAfterBackColor', 'white');
+        wht1.style.setProperty('--spanAfterBackColor', 'white');
     // wht.style.backgroundColor = '#343F4F';
         nav.style.backgroundColor = '#343f4f00';
         intro.style.color = "black";
@@ -42,7 +41,6 @@ function btn() {
         a.style.color = "black";
         nav_color.style.color = "black";
         nav_color1.style.color = "black";
-        link.style.color = "black";
 }
 }
 
