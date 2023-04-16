@@ -18,14 +18,14 @@ var darkMode = false
 function btn() {
     darkMode = !darkMode
     if (darkMode) {
-        body.style.backgroundColor = '#343F4F'
-        span.style.setProperty('--spanAfterBackColor', '#343F4F');
-        wht1.style.setProperty('--spanAfterBackColor', '#343F4F');
+        body.style.backgroundColor = 'black'
+        span.style.setProperty('--spanAfterBackColor', 'black');
+        wht1.style.setProperty('--spanAfterBackColor', 'black');
         intro.style.color = "white";
         body.style.color = "white";
         a.style.color = "white";
         // wht.style.backgroundColor = '#343F4F';
-        nav.style.backgroundColor = '#343F4F';
+        // nav.style.backgroundColor = 'black';
         nav_color.style.color = "white";
         nav_color1.style.color = "white";
     }

@@ -9,13 +9,164 @@
   <link rel="shortcut icon" href="illustrate1.png">
   <link rel="stylesheet" href="index.css">
   <style>
-    /* .light .mode {
-            color: blue;
+    @media screen and (min-device-width: 0) and (max-device-width: 767px) {
+      .ill {
+        /* display: none; */
+        width: 45%;
+        position: relative;
+        top: -100px;
+        left: -21px;
+      }
+
+      #hero h1 {
+        position: relative;
+        left: -20px;
+        font-size: 21px;
+        padding: 80px;
+        top: 0px;
+        width: 100%;
+      }
+
+      .wrapper {
+        position: relative;
+        left: 29px;
+        top: -85px;
+        /* width: 90%; */
+        width: 135.5%;
+        /* background-color: red; */
+        display: inline-flex;
+      }
+
+      .wrapper .static-txt {
+        font-size: 21px;
+        color: #000000;
+        position: relative;
+        top: 10px;
+        left: 33px;
+        font-weight: bold;
+      }
+
+      #hel {
+        font-size: 45px;
+      }
+
+      .wrapper .dynamic-txts {
+        /* background: red; */
+        line-height: 90px;
+        height: 90px;
+        position: relative;
+        top: -20px;
+        width: 100%;
+        left: 26px;
+        /* background-color: red; */
+        overflow: hidden;
+        margin-left: 19px;
+      }
+
+      .wrapper .dynamic-txts li {
+        list-style: none;
+        font-size: 21px;
+        z-index: 3;
+        font-weight: bolder;
+        width: 100%;
+        color: #241954;
+        position: relative;
+        /* top: -10px; */
+        animation: sliding 4s steps(2) infinite;
+      }
+
+      @keyframes sliding {
+        100% {
+          top: -182px;
         }
-        .dark .mode {
+      }
+
+      .dynamic-txts li span {
+        position: relative;
+      }
+
+      .dynamic-txts li span::after {
+        content: "";
+        left: 0;
+        position: absolute;
+        height: 100%;
+        background-color: var(--spanAfterBackColor, white);
+        width: 100%;
+        top: 0;
+        border-left: 2px solid #000000;
+        animation: typing 2s steps(10) infinite;
+      }
+
+      /* #wht::after {
             background-color: red;
         } */
-    * {
+      @keyframes typing {
+        0% {
+          left: 13%;
+        }
+
+        25% {
+          left: 43%;
+        }
+
+        50% {
+          left: 43%;
+          border-left: 2px solid #343f4f;
+        }
+
+        75% {
+          left: 100%;
+        }
+
+        100% {
+          left: 100%;
+          margin: 0 -35px 0 35px;
+        }
+
+        100% {
+          left: 10%;
+        }
+      }
+
+      .dynamic-txts li span {
+        position: relative;
+      }
+
+      nav {
+        display: none;
+        height: 50px;
+        position: fixed;
+        /* left: 60%; */
+        width: 100%;
+        z-index: 2;
+        background-color: white;
+      }
+
+      .ul li {
+        display: inline;
+        position: relative;
+        left: 74%;
+        top: -26px;
+        font-weight: bolder;
+        padding: 20px;
+      }
+
+      .ul a {
+        text-decoration: none;
+        color: black;
+      }
+
+      .ul a:hover {
+        color: #343f4f;
+
+      }
+
+
+
+    }
+
+    @media screen and (min-width:768px) {
+      * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
@@ -72,7 +223,7 @@
       list-style: none;
       font-size: 60px;
       font-weight: bolder;
-      color: #31275B;
+      color: #4f4672;
       position: relative;
       top: -2px;
       animation: sliding 4s steps(2) infinite;
@@ -139,7 +290,7 @@
 
     nav {
       height: 70px;
-      position: fixed;
+      position:fixed;
       /* left: 60%; */
       width: 100%;
       z-index: 2;
@@ -472,7 +623,925 @@
       animation-iteration-count: infinite;
       background-size: cover;
     }
+      }
+      @media screen and (min-width:992px) {
+        * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
 
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      /* display: flex;
+            align-items: center;
+            justify-content: center; */
+      min-height: 100vh;
+      color: rgb(0, 0, 0);
+      background-color: #ffffff;
+    }
+
+    #hero h1 {
+      font-size: 45px;
+    }
+
+    .wrapper {
+      position: relative;
+      /* left: 110px; */
+      top: -70px;
+      /* width: 91%; */
+      /* background-color: red; */
+      display: inline-flex;
+    }
+
+    .wrapper .static-txt {
+      font-size: 45px;
+      color: #000000;
+      position: relative;
+      top: 24 px;
+      left: 91px;
+      font-weight: bold;
+    }
+
+    .wrapper .dynamic-txts {
+      /* background: red; */
+      line-height: 90px;
+      height: 90px;
+      position: relative;
+      top: 10px;
+      left: 90px;
+      overflow: hidden;
+      margin-left: 19px;
+    }
+
+    .wrapper .dynamic-txts li {
+      list-style: none;
+      font-size: 45px;
+      font-weight: bolder;
+      color: #4f4672;
+      position: relative;
+      top: -2px;
+      animation: sliding 4s steps(2) infinite;
+    }
+
+    @keyframes sliding {
+      100% {
+        top: -182px;
+      }
+    }
+
+    .dynamic-txts li span {
+      position: relative;
+    }
+
+    .dynamic-txts li span::after {
+      content: "";
+      /* left: 0; */
+      position: absolute;
+      height: 100%;
+      background-color: var(--spanAfterBackColor, rgb(255, 255, 255));
+      width: 100%;
+      top: 0;
+      border-left: 2px solid #000000;
+      animation: typing 2s steps(10) infinite;
+    }
+
+    /* #wht::after {
+            background-color: red;
+        } */
+    @keyframes typing {
+      0% {
+        left: 13%;
+        background-color: var(--spanAfterBackColor, rgb(255, 255, 255));
+
+      }
+
+      25% {
+        left: 43%;
+      }
+
+      50% {
+        left: 43%;
+        border-left: 2px solid #343f4f;
+      }
+
+      75% {
+        left: 100%;
+      }
+
+      100% {
+        left: 100%;
+        margin: 0 -35px 0 35px;
+      }
+
+      100% {
+        left: 10%;
+      }
+    }
+
+    .dynamic-txts li span {
+      position: relative;
+    }
+
+    nav {
+      height: 70px;
+      position:fixed;
+      /* left: 60%; */
+      width: 100%;
+      z-index: 2;
+      backdrop-filter: blur(50px);
+      background-color: rgba(120, 107, 107, 0);
+    }
+
+    .ul li {
+      display: inline;
+      position: relative;
+      left: 74%;
+      top: -20px;
+      font-weight: bolder;
+      padding: 20px;
+    }
+
+    .ul a {
+      text-decoration: none;
+      color: rgb(0, 0, 0);
+    }
+
+    .ul a:hover {
+      color: #343f4f;
+
+    }
+
+    #hero h1 {
+      color: rgb(0, 0, 0);
+      position: relative;
+      left: 10px;
+      padding: 80px;
+      top: 30px;
+      width: 60%;
+    }
+
+    #hero #aa {
+      text-decoration: none;
+    }
+
+    #hero #aa:active {
+      color: #343f4f;
+    }
+
+    .ill {
+      width: 44%;
+      position: relative;
+      top: -220px;
+      left: 0%;
+    }
+
+    .logo h2 span {
+      color: rgb(0, 0, 0);
+      text-shadow: slateblue;
+    }
+
+    .logo h2 {
+      font-size: 40px;
+      color: #31275B;
+    }
+
+    .logo {
+      position: relative;
+      left: 9%;
+      top: 10px;
+    }
+
+    .linkedin {
+      position: relative;
+      left: -250px;
+      height: 22px;
+      width: 22px;
+      top: 45px;
+    }
+
+    .git {
+      position: relative;
+      left: -490px;
+      height: 22px;
+      width: 22px;
+      top: 85px;
+    }
+
+    footer {
+      font-size: 15px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .darkmode {
+      position: relative;
+      left: 95%;
+      top: 25px;
+      z-index: 5;
+      height: 30px;
+      width: 30px;
+      background-color: rgb(0, 0, 0);
+    }
+
+    #hero {
+      /* background-color: blue; */
+      height: 100vh;
+    }
+
+    #about h2 {
+      text-align: center;
+      font-size: 40px;
+    }
+
+    #about pre {
+      font-size: 12px;
+      text-align: center;
+    }
+
+    .aboutright {
+      width: 45%;
+      top: -340px;
+      position: relative;
+      left: -6%;
+      line-height: 30px;
+      float: right;
+    }
+
+    .aboutleft {
+      width: 30%;
+      /* background-color: white; */
+      top: 33px;
+      height: 40vh;
+      position: relative;
+      left: 9%;
+      margin-bottom: 120px;
+      /* line-height: 30px; */
+    }
+
+    #about h3 {
+      position: relative;
+      left: 8.6%;
+      width: 19%;
+      font-size: 30px;
+    }
+
+    #about a img {
+      top: 15px;
+      width: 44px;
+      position: relative;
+      left: 9.4%;
+    }
+
+    #about .look {
+      position: relative;
+      left: 45%;
+      width: 50%;
+      top: -112px;
+    }
+
+    #about {
+      width: 100%;
+    }
+    .projects {
+      display: flex;
+      flex-wrap: wrap;
+      margin:40px 70px 20px 120px;
+      row-gap: 20px;
+      column-gap: 30px;
+    }
+   
+    /* .projects img:first-child {
+      width: 30%;
+    } */
+    .projects img {
+      cursor: pointer;
+      border: 1 px solid black;
+      padding: 10px;
+      /* padding: 10px; */
+      width: 30%;
+    }
+    .love {
+      top: -30px;
+      position: relative;
+    }
+
+    .htm {
+      position: relative;
+      left: 14%;
+      list-style: circle;
+      width: 40%;
+      top: 20px;
+      line-height: 35px;
+    }
+
+    #work {
+      height: 60pc;
+    }
+
+    #work h2 {
+      text-align: center;
+      font-size: 40px;
+    }
+
+    #work pre {
+      font-size: 12px;
+      text-align: center;
+    }
+
+    /* #can {
+        width: 100px;
+        background-color: blue;
+      } */
+    .sayhello h2 {
+      text-align: center;
+      font-size: 40px;
+    }
+
+    .sayhello pre {
+      text-align: center;
+    }
+
+    .sayhello {
+      height: 80vh;
+    }
+
+    .sayhello p {
+      width: 79.7%;
+      left: 9%;
+      font-size: 18px;
+      top: 30px;
+      position: relative;
+    }
+
+    .helloleft {
+      width: 49%;
+      position: relative;
+      left: 9%;
+      top: 60px;
+    }
+
+    .helloleft h3 {
+      position: relative;
+      top: 10px;
+    }
+
+    .helloleft p {
+      position: relative;
+      font-size: 16px;
+      top: 23px;
+      left: 0px;
+    }
+
+    .helloleft a {
+      padding: 10px 15px 10px 15px;
+      font-size: 14px;
+      position: relative;
+      top: 70px;
+      color: white;
+      background-color: #000000;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+
+    .helloleft a:hover {
+      padding: 10px 20px 10px 20px;
+      background-color: #343f4f;
+    }
+
+    .helloright {
+      position: relative;
+      left: -18%;
+      float: right;
+    }
+
+    .helloright pre {
+      text-align: left;
+      position: relative;
+      left: -22%;
+      top: 8px;
+      line-height: 25px;
+    }
+
+    #mail {
+      position: relative;
+      top: -21px;
+      cursor: pointer;
+    }
+
+    .follo {
+      position: relative;
+      top: 70px;
+    }
+
+    .follo h3 {
+      position: relative;
+      top: -20px;
+    }
+
+    .follo ul {
+      position: relative;
+      left: 28px;
+      /* color: black; */
+    }
+
+    .follo ul li {
+      text-decoration: none;
+      padding: 0px;
+      /* color: black; */
+      cursor: pointer;
+      width: 10%;
+      line-height: 26px;
+      list-style: circle;
+    }
+
+    #btp {
+      padding: 20px;
+      background-color: red;
+      float: right;
+      position: relative;
+      right: 30px;
+      top: -20px;
+    }
+
+    .aboutleftimage {
+      position: relative;
+      top: -30px;
+      transform: rotate(340deg);
+    }
+
+    #hero {
+      background-repeat: no-repeat;
+      animation: heroslide;
+      animation-duration: 20s;
+      animation-delay: 1s;
+      animation-iteration-count: infinite;
+      background-size: cover;
+    }
+      }
+  @media screen and (min-width:1200px) {
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      /* display: flex;
+            align-items: center;
+            justify-content: center; */
+      min-height: 100vh;
+      color: rgb(0, 0, 0);
+      background-color: #ffffff;
+    }
+
+    #hero h1 {
+      font-size: 60px;
+    }
+
+    .wrapper {
+      position: relative;
+      /* left: 110px; */
+      top: -70px;
+      /* width: 91%; */
+      /* background-color: red; */
+      display: inline-flex;
+    }
+
+    .wrapper .static-txt {
+      font-size: 60px;
+      color: #000000;
+      position: relative;
+      top: 13px;
+      left: 118px;
+      font-weight: bold;
+    }
+
+    .wrapper .dynamic-txts {
+      /* background: red; */
+      line-height: 90px;
+      height: 90px;
+      position: relative;
+      top: 10px;
+      left: 110px;
+      overflow: hidden;
+      margin-left: 19px;
+    }
+
+    .wrapper .dynamic-txts li {
+      list-style: none;
+      font-size: 60px;
+      font-weight: bolder;
+      color: #4f4672;
+      position: relative;
+      top: -2px;
+      animation: sliding 4s steps(2) infinite;
+    }
+
+    @keyframes sliding {
+      100% {
+        top: -182px;
+      }
+    }
+
+    .dynamic-txts li span {
+      position: relative;
+    }
+
+    .dynamic-txts li span::after {
+      content: "";
+      left: 0;
+      position: absolute;
+      height: 100%;
+      background-color: var(--spanAfterBackColor, rgb(255, 255, 255));
+      width: 100%;
+      top: 0;
+      border-left: 2px solid #000000;
+      animation: typing 2s steps(10) infinite;
+    }
+
+    /* #wht::after {
+            background-color: red;
+        } */
+    @keyframes typing {
+      0% {
+        left: 13%;
+        background-color: var(--spanAfterBackColor, rgb(255, 255, 255));
+
+      }
+
+      25% {
+        left: 43%;
+      }
+
+      50% {
+        left: 43%;
+        border-left: 2px solid #343f4f;
+      }
+
+      75% {
+        left: 100%;
+      }
+
+      100% {
+        left: 100%;
+        margin: 0 -35px 0 35px;
+      }
+
+      100% {
+        left: 10%;
+      }
+    }
+
+    .dynamic-txts li span {
+      position: relative;
+    }
+
+    nav {
+      height: 70px;
+      position:fixed;
+      /* left: 60%; */
+      width: 100%;
+      z-index: 2;
+      backdrop-filter: blur(50px);
+      background-color: rgba(120, 107, 107, 0);
+    }
+
+    .ul li {
+      display: inline;
+      position: relative;
+      left: 74%;
+      top: -20px;
+      font-weight: bolder;
+      padding: 20px;
+    }
+
+    .ul a {
+      text-decoration: none;
+      color: rgb(0, 0, 0);
+    }
+
+    .ul a:hover {
+      color: #343f4f;
+
+    }
+
+    #hero h1 {
+      color: rgb(0, 0, 0);
+      position: relative;
+      left: 40px;
+      padding: 80px;
+      top: 30px;
+      width: 60%;
+    }
+
+    #hero #aa {
+      text-decoration: none;
+    }
+
+    #hero #aa:active {
+      color: #343f4f;
+    }
+
+    .ill {
+      width: 48%;
+      position: relative;
+      top: -220px;
+      left: 3%;
+    }
+
+    .logo h2 span {
+      color: rgb(0, 0, 0);
+      text-shadow: slateblue;
+    }
+
+    .logo h2 {
+      font-size: 40px;
+      color: #31275B;
+    }
+
+    .logo {
+      position: relative;
+      left: 9%;
+      top: 10px;
+    }
+
+    .linkedin {
+      position: relative;
+      left: -250px;
+      height: 22px;
+      width: 22px;
+      top: 45px;
+    }
+
+    .git {
+      position: relative;
+      left: -490px;
+      height: 22px;
+      width: 22px;
+      top: 85px;
+    }
+
+    footer {
+      font-size: 15px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .darkmode {
+      position: relative;
+      left: 95%;
+      top: 25px;
+      z-index: 5;
+      height: 30px;
+      width: 30px;
+      background-color: rgb(0, 0, 0);
+    }
+
+    #hero {
+      /* background-color: blue; */
+      height: 100vh;
+    }
+
+    #about h2 {
+      text-align: center;
+      font-size: 40px;
+    }
+
+    #about pre {
+      font-size: 12px;
+      text-align: center;
+    }
+
+    .aboutright {
+      width: 45%;
+      top: -340px;
+      position: relative;
+      left: -6%;
+      line-height: 30px;
+      float: right;
+    }
+
+    .aboutleft {
+      width: 30%;
+      /* background-color: white; */
+      top: 33px;
+      height: 40vh;
+      position: relative;
+      left: 9%;
+      margin-bottom: 120px;
+      /* line-height: 30px; */
+    }
+
+    #about h3 {
+      position: relative;
+      left: 8.6%;
+      width: 19%;
+      font-size: 30px;
+    }
+
+    #about a img {
+      top: 15px;
+      width: 44px;
+      position: relative;
+      left: 9.4%;
+    }
+
+    #about .look {
+      position: relative;
+      left: 45%;
+      width: 50%;
+      top: -112px;
+    }
+
+    #about {
+      width: 100%;
+    }
+    .projects {
+      display: flex;
+      flex-wrap: wrap;
+      margin:40px 70px 20px 120px;
+      row-gap: 20px;
+      column-gap: 30px;
+    }
+   
+    /* .projects img:first-child {
+      width: 30%;
+    } */
+    .projects img {
+      cursor: pointer;
+      border: 1 px solid black;
+      padding: 10px;
+      /* padding: 10px; */
+      width: 30%;
+    }
+    .love {
+      top: -30px;
+      position: relative;
+    }
+
+    .htm {
+      position: relative;
+      left: 14%;
+      list-style: circle;
+      width: 40%;
+      top: 20px;
+      line-height: 35px;
+    }
+
+    #work {
+      height: 60pc;
+    }
+
+    #work h2 {
+      text-align: center;
+      font-size: 40px;
+    }
+
+    #work pre {
+      font-size: 12px;
+      text-align: center;
+    }
+
+    /* #can {
+        width: 100px;
+        background-color: blue;
+      } */
+    .sayhello h2 {
+      text-align: center;
+      font-size: 40px;
+    }
+
+    .sayhello pre {
+      text-align: center;
+    }
+
+    .sayhello {
+      height: 80vh;
+    }
+
+    .sayhello p {
+      width: 79.7%;
+      left: 9%;
+      font-size: 18px;
+      top: 30px;
+      position: relative;
+    }
+
+    .helloleft {
+      width: 49%;
+      position: relative;
+      left: 9%;
+      top: 60px;
+    }
+
+    .helloleft h3 {
+      position: relative;
+      top: 10px;
+    }
+
+    .helloleft p {
+      position: relative;
+      font-size: 16px;
+      top: 23px;
+      left: 0px;
+    }
+
+    .helloleft a {
+      padding: 10px 15px 10px 15px;
+      font-size: 14px;
+      position: relative;
+      top: 70px;
+      color: white;
+      background-color: #000000;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+
+    .helloleft a:hover {
+      padding: 10px 20px 10px 20px;
+      background-color: #343f4f;
+    }
+
+    .helloright {
+      position: relative;
+      left: -18%;
+      float: right;
+    }
+
+    .helloright pre {
+      text-align: left;
+      position: relative;
+      left: -22%;
+      top: 8px;
+      line-height: 25px;
+    }
+
+    #mail {
+      position: relative;
+      top: -21px;
+      cursor: pointer;
+    }
+
+    .follo {
+      position: relative;
+      top: 70px;
+    }
+
+    .follo h3 {
+      position: relative;
+      top: -20px;
+    }
+
+    .follo ul {
+      position: relative;
+      left: 28px;
+      /* color: black; */
+    }
+
+    .follo ul li {
+      text-decoration: none;
+      padding: 0px;
+      /* color: black; */
+      cursor: pointer;
+      width: 10%;
+      line-height: 26px;
+      list-style: circle;
+    }
+
+    #btp {
+      padding: 20px;
+      background-color: red;
+      float: right;
+      position: relative;
+      right: 30px;
+      top: -20px;
+    }
+
+    .aboutleftimage {
+      position: relative;
+      top: -30px;
+      transform: rotate(340deg);
+    }
+
+    #hero {
+      background-repeat: no-repeat;
+      animation: heroslide;
+      animation-duration: 20s;
+      animation-delay: 1s;
+      animation-iteration-count: infinite;
+      background-size: cover;
+    }
+      }
     /* @keyframes heroslide {
         0% {
           background-image: url(hero4.jpeg);
@@ -489,160 +1558,7 @@
           background-image: url(hero5.jpg);
         }
       } */
-    @media screen and (min-device-width: 0) and (max-device-width: 767px) {
-      .ill {
-        /* display: none; */
-        width: 45%;
-        position: relative;
-        top: -100px;
-        left: -21px;
-      }
-
-      #hero h1 {
-        position: relative;
-        left: -20px;
-        font-size: 21px;
-        padding: 80px;
-        top: 0px;
-        width: 100%;
-      }
-
-      .wrapper {
-        position: relative;
-        left: 29px;
-        top: -85px;
-        /* width: 90%; */
-        width: 135.5%;
-        /* background-color: red; */
-        display: inline-flex;
-      }
-
-      .wrapper .static-txt {
-        font-size: 21px;
-        color: #000000;
-        position: relative;
-        top: 10px;
-        left: 33px;
-        font-weight: bold;
-      }
-
-      #hel {
-        font-size: 45px;
-      }
-
-      .wrapper .dynamic-txts {
-        /* background: red; */
-        line-height: 90px;
-        height: 90px;
-        position: relative;
-        top: -20px;
-        width: 100%;
-        left: 26px;
-        /* background-color: red; */
-        overflow: hidden;
-        margin-left: 19px;
-      }
-
-      .wrapper .dynamic-txts li {
-        list-style: none;
-        font-size: 21px;
-        z-index: 3;
-        font-weight: bolder;
-        width: 100%;
-        color: #241954;
-        position: relative;
-        /* top: -10px; */
-        animation: sliding 4s steps(2) infinite;
-      }
-
-      @keyframes sliding {
-        100% {
-          top: -182px;
-        }
-      }
-
-      .dynamic-txts li span {
-        position: relative;
-      }
-
-      .dynamic-txts li span::after {
-        content: "";
-        left: 0;
-        position: absolute;
-        height: 100%;
-        background-color: var(--spanAfterBackColor, white);
-        width: 100%;
-        top: 0;
-        border-left: 2px solid #000000;
-        animation: typing 2s steps(10) infinite;
-      }
-
-      /* #wht::after {
-            background-color: red;
-        } */
-      @keyframes typing {
-        0% {
-          left: 13%;
-        }
-
-        25% {
-          left: 43%;
-        }
-
-        50% {
-          left: 43%;
-          border-left: 2px solid #343f4f;
-        }
-
-        75% {
-          left: 100%;
-        }
-
-        100% {
-          left: 100%;
-          margin: 0 -35px 0 35px;
-        }
-
-        100% {
-          left: 10%;
-        }
-      }
-
-      .dynamic-txts li span {
-        position: relative;
-      }
-
-      nav {
-        display: none;
-        height: 50px;
-        position: fixed;
-        /* left: 60%; */
-        width: 100%;
-        z-index: 2;
-        background-color: white;
-      }
-
-      .ul li {
-        display: inline;
-        position: relative;
-        left: 74%;
-        top: -26px;
-        font-weight: bolder;
-        padding: 20px;
-      }
-
-      .ul a {
-        text-decoration: none;
-        color: black;
-      }
-
-      .ul a:hover {
-        color: #343f4f;
-
-      }
-
-
-    }
+    
 
     /* html[data-theme=dark] {
     --bg: linear-gradient(256deg, #081f3d, #000d1a);
